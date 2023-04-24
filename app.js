@@ -1,9 +1,9 @@
 const express = require("express");
 const path = require("path");
 const http = require("http");
+const { routesInit } = require("./routes/config_routes");
 
-const {routesInit} = require("./routes/configRoutes");
-require("./db/mongoConnect")
+require("./db/mongoConnect");
 
 // מייצר משתנה שמקבל את היכולות של אקספרס ויוכל להשתמש בפקודות
 // של הספריה
